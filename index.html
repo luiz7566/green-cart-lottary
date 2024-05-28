@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Card Lottery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Green Card Lottery</h1>
+    <button onclick="checkGreenCard()">Check Your Luck</button>
+    <div id="result"></div>
+
+    <script>
+        function checkGreenCard() {
+            // 2.2% şans
+            const chance = 0.022;
+            const randomNumber = Math.random();
+            
+            if (randomNumber < chance) {
+                document.getElementById('result').innerText = 'Congratulations! You got a Green Card!';
+            } else {
+                document.getElementById('result').innerText = 'Sorry negga did not get a Green Card this time. imza_obez essek';
+            }
+        }
+    </script>
+</body>
+</html>
